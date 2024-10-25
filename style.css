@@ -1,7 +1,9 @@
 body {
     font-family:"Roboto",'Helvetica Neue', sans-serif;
-    margin: 0;
+    margin: 0px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .header,
@@ -9,9 +11,21 @@ body {
     background-color: #1F2937;
   }
 
+  h5 {
+    text-align: center;
+  }
+
   .this-website-is-awesome-box p, a {
     font-size: 18px;
     color:#E5E7EB;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    a {
+      text-decoration: none;
+    }
   }
 
   h1 {
@@ -23,12 +37,27 @@ body {
   h3 {
     font-size: 24px;
     color: #F9FAF8;
-  }
+    margin: 0px;
+ }
 
   h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    text-align: center;
+  }
+
+  .some-random-info {
+    padding-bottom: 50px;
+  }
+
+  .img-txt1, .img-txt2, .img-txt3, .img-txt4 {
+    text-align: center;
+    max-width: 200px; /* This gave the text the breathing room */
+      img {
+        border-radius: 5px;
+        border-style: solid;
+      }
   }
 
   .Thors-quote {
@@ -37,12 +66,121 @@ body {
     font-weight: light;
     font-style:italic;
     color: #1F2937;
+    padding: 50px;
+  }
+
+  blockquote {
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 500px;
   }
 
   .call-to-action { 
+    text-align: left;
+    color: #E5E7EB;
     background-color: #3882F6;
+    background-clip:padding-box;
+    border-radius: 5px;
+    margin-left: 22cqmax;
+    margin-right: 22cqmax;
+    margin-block: 50px;
+    align-self: center;
+  }
+
+  button { 
+        background-color: #3882F6;
+        border-color: #1F2937;
+        color: #E5E7EB;
+        border-radius: 5px;
+        border-style: solid;
+        padding: 5px 25px;
+  }
+
+  .call-to-action button {
+    border-color:#E5E7EB;
+  }
+
+  /* header section flex*/
+
+  .header-and-links {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+  }
+
+  .left-header {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  .the-awesome-container {
+    display: flex;
+    margin: 20px;
+    gap:20px;
+    padding: 20px;
+    padding-left: 0px;
+  }
+
+  .awesome-box-and-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    button {
+      width: fit-content;
+    }
+  }
+
+  .this-website-is-awesome-box {
+    display: flex;
+    flex-direction: column;
+    h1, p {
+      margin-block: 0px 2px;
+        }
+  }
+
+
+  /* middle section flex */ 
+
+  .img-txt-box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-wrap: wrap;
+    gap: 30px;
+  }
+
+  #Thor-GoT {
+    text-align: right;
+    margin: 0px;
+    padding-right: 100px;
+  }
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    gap: 225px;
 }
 
-  .call-to-action button { 
-        background-color: #3882F6;
-  }
+.cta-button-only {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.cta-wo-button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* page margin*/
+
+.header, .footer, .Thors-quote {
+  padding-left: 400px;
+  padding-right: 400px;
+}
